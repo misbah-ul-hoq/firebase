@@ -18,7 +18,7 @@ const routes = createBrowserRouter([
       },
       {
         path: "/services",
-        // loader: () => fetch("http://localhost:3000/services"),
+        // loader: () => fetch("https://car-doctor-backend-umber.vercel.app/services"),
         element: (
           <PrivateRoute>
             <Services />

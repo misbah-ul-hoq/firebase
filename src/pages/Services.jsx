@@ -11,7 +11,7 @@ const Services = () => {
       .get(`/services?email=${user.email}`)
       .then((res) => setData(res.data));
     // axios
-    //   .get(`http://localhost:3000/services?email=${user.email}`, {
+    //   .get(`https://car-doctor-backend-umber.vercel.app/services?email=${user.email}`, {
     //     withCredentials: true,
     //   })
     //   .then((res) => setData(res.data));

@@ -37,13 +37,17 @@ const AuthProvider = ({ children }) => {
       setLoading(false);
       setUser(currentUser);
       if (currentUser) {
-        // axios.post("http://localhost:3000/jwt", userEmail, {
+        // axios.post("https://car-doctor-backend-umber.vercel.app/jwt", userEmail, {
         //   withCredentials: true,
         // });
       } else {
-        axios.post("http://localhost:3000/logout", userEmail, {
-          withCredentials: true,
-        });
+        axios.post(
+          "https://car-doctor-backend-umber.vercel.app/logout",
+          userEmail,
+          {
+            withCredentials: true,
+          }
+        );
       }
     });
     return () => {

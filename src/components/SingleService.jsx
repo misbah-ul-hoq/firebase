@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 const SingleService = () => {
   const [service, setService] = useState({});
   useEffect(() => {
-    fetch("http://localhost:3000/services?service_id=04")
+    fetch("https://car-doctor-backend-umber.vercel.app/services?service_id=04")
       .then((res) => res.json())
       .then((data) => {
         setService(data);

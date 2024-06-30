@@ -52,7 +52,7 @@ const LoginForm = () => {
           signUpWithGoogle()
             .then((result) => {
               axios.post(
-                "http://localhost:3000/jwt",
+                "https://car-doctor-backend-umber.vercel.app/jwt",
                 { email: result.user.email },
                 {
                   withCredentials: true,
